@@ -1721,9 +1721,6 @@ export default class Select<
       'aria-labelledby': this.props['aria-labelledby'],
       'aria-required': required,
       role: 'combobox',
-      'aria-activedescendant': this.isAppleDevice
-        ? undefined
-        : this.state.focusedOptionId || '',
 
       ...(menuIsOpen && {
         'aria-controls': this.getElementId('listbox'),
